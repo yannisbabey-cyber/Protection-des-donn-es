@@ -19,7 +19,7 @@
       "items": [
         {
           "label": "Directives cantonales",
-          "text": "Plusieurs directives liées à la protection des données ont déjà été édictées par le ministre de la Formation. Elles définissent des lignes directrices claires concernant les pratiques pédagogiques numériques et l'usage encadré de certains outils technologiques dans les établissements scolaires. Ces textes servent de référence aussi bien pour les élèves et leur famille que pour les professionnels de l'enseignement, en les accompagnant dans l'intégration du numériques à l'école tout en assurant le respect de la nLPD.",
+          "text": "Plusieurs directives liées à la protection des données ont déjà été édictées par le ministre de la Formation. Elles définissent des lignes directrices claires concernant les pratiques pédagogiques numériques et l'usage encadré de certains outils technologiques dans les établissements scolaires.",
           "links": []
         },
         {
@@ -38,7 +38,7 @@
         },
         {
           "label": "Droit à l'image et à la voix",
-          "text": "Le droit à l'image et à la voix des élèves doit être respecté dans tous les contextes éducatifs. Diverses situations ont ainsi été analysées afin de mettre à disposition des établissements scolaires des formulaires adaptés, destinés aux élèves, à leurs familles ou à toute autre personne concernée. Ces documents sont proposés en version modifiable afin que chaque école puisse l'adapter selon ses besoins.",
+          "text": "Le droit à l'image et à la voix des élèves doit être respecté dans tous les contextes éducatifs. Des formulaires adaptables peuvent être proposés selon les besoins.",
           "links": []
         },
         {
@@ -53,146 +53,17 @@
       "color": "#BBF7D0",
       "items": [
         {
-          "label": "Infrastructure",
-          "text": "La LEO prévoit la mise en place par l'État : d'un système de gestion et d'information; d'un système de communication; En fonction des besoins, tous les établissements scolaires ainsi que le Service de l’enseignement et le Service de la formation postobligatoire sont rattachés à ces systèmes.",
-          "links": []
-        },
-        {
           "label": "Sécurité du réseau",
-          "text": "Le SDI est responsable de la gestion des infrastructures informatiques cantonales. Il assure notamment la maintenance et la sécurisation des réseaux et des systèmes ainsi que la mise en place de politiques de sécurité informatique. Dans le cadre du CEIJ, les communes sont également encouragées à adopter des stratégies de cybersécurité. Ainsi, chaque école est en mesure de développer son propre concept de sécurité.",
+          "text": "Le SDI est responsable de la gestion des infrastructures informatiques cantonales. Il assure notamment la maintenance et la sécurisation des réseaux et des systèmes.",
           "links": [
             "https://www.jura.ch/fr/Autorites/Administration/DFNS/SDI/Cybersecurite/SCJU/Strategie-de-cybersecurite-SCJU.html"
           ]
         },
         {
-          "label": "Sécurité sur M365",
-          "text": "Éléments entrés en vigueur en 2024 : Contrat EDUCA avec Microsoft; Licences A5 avec Defender P2 (antivirus supérieur); Authentification par double facteur pour les enseignants; Limitation territoriale de l'accès à M365 (Suisse et pays limitrophes); Redirection des courriels interdite; Contrôle strict des invités; Partage en intranet uniquement.",
-          "links": []
-        },
-        {
-          "label": "edu.jura.ch",
-          "text": "@edu.jura.ch est un domaine M365, construit en 2020. Il a été développé par le SDI en accroissant progressivement la sécurité et la séparation des données. Le SEN et le SFP participent à son entretien et à consolidation. Des protocoles rigoureux ont été établis afin de sécuriser l'environnement de travail et de contrôler l'accès aux données sensibles. Les élèves obtiennent une adresse courriel dès la 7e année primaire, utilisable jusqu'à la fin du secondaire. Elle permet d'accéder à un espace de travail partagé et de se connecter aux services éducatifs via Edulog.",
+          "label": "edu.jura.ch / Edulog",
+          "text": "Environnement M365 cantonal (edu.jura.ch) et accès aux services éducatifs via Edulog.",
           "links": [
             "https://www.edulog.ch/fr/quest-ce-quedulog"
-          ]
-        },
-        {
-          "label": "Gestion des comptes et des données",
-          "text": "Grâce à Information Barrier, l'accès aux données et aux communications est séparé en trois segments : (1) tous les enseignants et le personnel administratif; (2) enseignants et élèves par école; (3) enseignants et utilisateurs externes par école.",
-          "links": []
-        },
-        {
-          "label": "Contrôle des documents partagés",
-          "text": "Le partage via Sharepoint ou Teams est préconisé pour conserver un meilleur contrôle sur les données. Données cryptées. Par défaut, les équipes Teams sont supprimées chaque année. Depuis 2025, des Labels peuvent définir la durée de vie (2 semaines, 1 an, 3 ans) et le degré de confidentialité (public/confidentiel).",
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Service associé",
-      "color": "#BFDBFE",
-      "items": [
-        {
-          "label": "CLOEE2",
-          "text": "CLOEE2 permet de gérer les profils scolaires des élèves (inscription, notes, promotion, absences, parcours, édition de documents). L'accès est strictement limité aux personnes autorisées. Les données sont conservées selon une durée déterminée puis supprimées ou archivées de manière sécurisée.",
-          "links": []
-        },
-        {
-          "label": "Educlasse (auth via Edulog)",
-          "text": "Educlasse est une plateforme pédagogique (centre MITIC interjurassien). Données minimisées : enseignants (prénom, nom, identifiant technique), élèves (prénom, TechID). Hébergement en Suisse. Authentification via Edulog.",
-          "links": [
-            "https://cmij.ch/a-propos-2/"
-          ]
-        },
-        {
-          "label": "Webuntis",
-          "text": "Webuntis permet de planifier les horaires, gérer absences, réservations, travaux écrits, devoirs, communication et information aux parents. Contrat et administrateurs d'établissement pour cadrer accès et fonctionnalités.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Formation",
-      "color": "#FCA5A5",
-      "items": [
-        {
-          "label": "Coordinateurs numériques",
-          "text": "Un diplôme particulier est requis. Le Canton du Jura a collaboré avec la HEP-BEJUNE pour le CAS CNE. Un axe entier est consacré à la protection des données et à la sécurité informatique. Des interventions régulières ont lieu lors des rencontres cantonales.",
-          "links": [
-            "https://www.hep-bejune.ch/fr/Formations-continues/Formations-postgrades/CAS/Coordinateur-numerique-en-etablissement/CAS-Coordinateur-ou-coordinatrice-numerique-en-etablissement.html"
-          ]
-        },
-        {
-          "label": "Cahier des charges du coordinateur numérique",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1YyuXqpJ59Ph64L0F7miRTBarj8SWVxG5/view?usp=sharing"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Enseignant",
-      "color": "#FBCFE8",
-      "items": [
-        {
-          "label": "Diagnophish",
-          "text": "Après le personnel administratif du Canton, les enseignants de l'école obligatoire et de la formation post-obligatoire ont pris part à une opération de sensibilisation à la sécurité informatique et au hameçonnage. Le SFP organise aussi une conférence annuelle (2024 : mots de passe et protection des données).",
-          "links": [
-            "https://www.diagnophish.ch"
-          ]
-        },
-        {
-          "label": "HEP-BEJUNE",
-          "text": "Conférences sur la sécurité informatique et la protection des données (PPDT JUNE Christian Flueckiger; Céline Bulliard, juriste HEP-BEJUNE, conseillère en protection des données en entreprise).",
-          "links": []
-        },
-        {
-          "label": "Avenir Formation",
-          "text": "",
-          "links": [
-            "https://www.esig-ju.ch/cejef/fc/FC-printemps26_resume.pdf"
-          ]
-        },
-        {
-          "label": "Les données à l'école",
-          "text": "Classements des données pédagogiques, personnelles et sensibles.",
-          "links": [
-            "https://view.genially.com/681afb1591ccbf218602e8ae/interactive-content-protection-des-donnees-dans-lenseignement"
-          ]
-        },
-        {
-          "label": "Compétences fondamentales",
-          "text": "Reconnaître avec quel type de données ils travaillent; traiter les données d'après leur type; être vigilants avec les travaux d'élèves; travailler avec les données personnelles.",
-          "links": [
-            "https://drive.google.com/file/d/1LOjjgCu-L5W7lx2Jb0phHYmI2MvconU_/view?usp=sharing"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Élèves",
-      "color": "#DDD6FE",
-      "items": [
-        {
-          "label": "Charte numérique cantonale",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1E9ihMJm6v1GsoxlIxK51bczVcsHvbH7c/view?usp=sharing"
-          ]
-        },
-        {
-          "label": "Espace M365 : informations aux parents d'élèves et enseignants",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1jCthIZA0xLGng47YZq8i4lSf_u-ZJF2m/view?usp=sharing"
-          ]
-        },
-        {
-          "label": "Espace M365 : contrat élève",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1i5JFyyT9zgQKwS2_0tmqcRm5iNFL_OVE/view?usp=sharing"
           ]
         }
       ]
@@ -205,7 +76,7 @@
       "items": [
         {
           "label": "Nouvelle loi fédérale sur la protection des données",
-          "text": "La réécriture de la LEO vise à intégrer des bases légales sur le traitement des données scolaires. Ces modifications permettent aux directions, aux enseignants, au Service de l'enseignement et au Service de la formation postobligatoire de traiter des données personnelles et sensibles concernant les élèves jurassiens. Elles garantissent également que ces données soient traitées selon les exigences de la nouvelle loi fédérale sur la protection des données.",
+          "text": "Application de la nLPD dans le cadre postobligatoire, en cohérence avec les bases légales cantonales et fédérales.",
           "links": [
             "https://www.fedlex.admin.ch/eli/cc/2022/491/fr"
           ]
@@ -217,68 +88,13 @@
       "color": "#FDBA74",
       "items": [
         {
-          "label": "Directives cantonales",
-          "text": "Plusieurs directives liées à la protection des données ont déjà été édictées par le ministre de la Formation. Elles définissent des lignes directrices claires concernant les pratiques pédagogiques numériques et l'usage encadré de certains outils technologiques dans les établissements scolaires. Ces textes servent de référence aussi bien pour les élèves et leur famille que pour les professionnels de l'enseignement, en les accompagnant dans l'intégration du numériques à l'école tout en assurant le respect de la nLPD.",
-          "links": []
-        },
-        {
           "label": "Téléphone portable",
           "text": "Utilisation du téléphone portable dans les écoles du CEJEF. Règlement propre à chaque division.",
           "links": []
         },
         {
-          "label": "Prises de vue et enregistrements sonores",
-          "text": "Prises de vue et enregistrements sonores dans le cadre d'activités pédagogiques dans les écoles du CEJEF. Règlement propre à chaque division.",
-          "links": []
-        },
-        {
-          "label": "Droit à l'image et à la voix",
-          "text": "Le droit à l'image et à la voix des élèves doit être respecté dans tous les contextes éducatifs. Documents/formulaires adaptables selon les besoins. Règlement propre à chaque division.",
-          "links": []
-        },
-        {
           "label": "IA",
-          "text": "Intelligence artificielle générative - Recommandations dans les écoles du CEJEF. Règlement propre à chaque division.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Environnement de travail",
-      "color": "#BBF7D0",
-      "items": [
-        {
-          "label": "Infrastructure",
-          "text": "La LEO prévoit la mise en place par l'État : d'un système de gestion et d'information; d'un système de communication; En fonction des besoins, tous les établissements scolaires ainsi que le Service de l’enseignement et le Service de la formation postobligatoire sont rattachés à ces systèmes.",
-          "links": []
-        },
-        {
-          "label": "Sécurité du réseau",
-          "text": "Le SDI est responsable de la gestion des infrastructures informatiques cantonales. Maintenance, sécurisation, politiques de sécurité. Les communes sont encouragées à adopter des stratégies de cybersécurité; chaque école peut développer son propre concept de sécurité.",
-          "links": [
-            "https://www.jura.ch/fr/Autorites/Administration/DFNS/SDI/Cybersecurite/SCJU/Strategie-de-cybersecurite-SCJU.html"
-          ]
-        },
-        {
-          "label": "Sécurité sur M365",
-          "text": "Éléments entrés en vigueur en 2024 : Contrat EDUCA avec Microsoft; Licences A5 avec Defender P2; double facteur; limitation territoriale; redirection des courriels interdite; contrôle strict des invités; partage en intranet uniquement.",
-          "links": []
-        },
-        {
-          "label": "edu.jura.ch",
-          "text": "@edu.jura.ch (M365, 2020) : sécurité renforcée, séparation des données, protocoles d'accès. Adresse dès la 7e année. Collaboration via outils harmonisés et accès aux services éducatifs via Edulog.",
-          "links": [
-            "https://www.edulog.ch/fr/quest-ce-quedulog"
-          ]
-        },
-        {
-          "label": "Gestion des comptes et des données",
-          "text": "Information Barrier : séparation en trois segments (personnel; enseignants/élèves par école; enseignants/utilisateurs externes par école).",
-          "links": []
-        },
-        {
-          "label": "Contrôle des documents partagés",
-          "text": "Partage via Sharepoint/Teams pour limiter les duplications. Données cryptées. Suppression annuelle par défaut des équipes Teams. Labels (depuis 2025) : durée de vie et confidentialité.",
+          "text": "IA générative : recommandations dans les écoles du CEJEF. Règlement propre à chaque division.",
           "links": []
         }
       ]
@@ -289,96 +105,9 @@
       "items": [
         {
           "label": "CLOEE2",
-          "text": "CLOEE2 : gestion des profils scolaires. Accès limité. Conservation selon exigences légales et besoins administratifs; suppression ou archivage sécurisé.",
+          "text": "CLOEE2 : gestion des profils scolaires. Accès limité. Conservation selon exigences légales, puis suppression/archivage sécurisé.",
           "links": [
             "https://www.ppdt-june.ch/fr/Registre/Traitement-JU/Fichiers/Service-de-la-formation-postobligatoire-SFP.html"
-          ]
-        },
-        {
-          "label": "Webuntis",
-          "text": "Planification, absences, réservations, travaux/devoirs, communication et information aux parents. Contrat + administrateurs d'établissement pour cadrer accès et fonctionnalités.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "title": "Formation",
-      "color": "#FCA5A5",
-      "items": [
-        {
-          "label": "Coordinateurs numériques",
-          "text": "Diplôme requis; CAS CNE (HEP-BEJUNE) avec axe protection des données/sécurité; interventions régulières lors des rencontres cantonales.",
-          "links": [
-            "https://www.hep-bejune.ch/fr/Formations-continues/Formations-postgrades/CAS/Coordinateur-numerique-en-etablissement/CAS-Coordinateur-ou-coordinatrice-numerique-en-etablissement.html"
-          ]
-        },
-        {
-          "label": "Cahier des charges du coordinateur numérique",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1YyuXqpJ59Ph64L0F7miRTBarj8SWVxG5/view?usp=sharing"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Enseignant",
-      "color": "#FBCFE8",
-      "items": [
-        {
-          "label": "Diagnophish",
-          "text": "Sensibilisation sécurité/hameçonnage + conférence annuelle (2024 : mots de passe et protection des données).",
-          "links": [
-            "https://www.diagnophish.ch"
-          ]
-        },
-        {
-          "label": "HEP-BEJUNE",
-          "text": "Conférences sur sécurité et protection des données (PPDT JUNE; juriste HEP-BEJUNE).",
-          "links": [
-            "https://www.esig-ju.ch/cejef/fc/FC-printemps26_resume.pdf"
-          ]
-        },
-        {
-          "label": "Les données à l'école",
-          "text": "Classements des données pédagogiques, personnelles et sensibles.",
-          "links": [
-            "https://view.genially.com/681afb1591ccbf218602e8ae/interactive-content-protection-des-donnees-dans-lenseignement"
-          ]
-        },
-        {
-          "label": "Compétences fondamentales",
-          "text": "Reconnaître le type de données; traiter selon le type; vigilance avec travaux d'élèves; travailler avec les données personnelles.",
-          "links": [
-            "https://drive.google.com/file/d/1LOjjgCu-L5W7lx2Jb0phHYmI2MvconU_/view?usp=sharing"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Élèves",
-      "color": "#DDD6FE",
-      "items": [
-        {
-          "label": "Charte numérique cantonale",
-          "text": "",
-          "links": [
-            "charte_numérique_CEJEF.docx",
-            "https://www.canva.com/design/DAGjBCyvf9E/0QKSqVhhiOKAxasxUJCDWA/edit?utm_content=DAGjBCyvf9E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-          ]
-        },
-        {
-          "label": "Espace M365 : informations aux parents d'élèves et enseignants",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1jCthIZA0xLGng47YZq8i4lSf_u-ZJF2m/view?usp=sharing"
-          ]
-        },
-        {
-          "label": "Espace M365 : contrat élève",
-          "text": "",
-          "links": [
-            "https://drive.google.com/file/d/1i5JFyyT9zgQKwS2_0tmqcRm5iNFL_OVE/view?usp=sharing"
           ]
         }
       ]
