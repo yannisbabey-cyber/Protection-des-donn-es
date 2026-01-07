@@ -39,6 +39,13 @@ function matchesRubrique(rub, q){
   });
 }
 
+function closeAllTilesExcept(tileEl){
+  const tiles = tilesEl.querySelectorAll(".tile.open");
+  tiles.forEach(t => {
+    if(t !== tileEl) t.classList.remove("open");
+  });
+}
+
 function render(){
   tilesEl.innerHTML = "";
 
@@ -67,36 +74,74 @@ function render(){
     const count = (rub.items || []).length;
 
     tile.innerHTML = `
-      <div class="tile-top">
-        <h3 class="tile-title">${highlight(rub.title, q)}</h3>
-        <div class="tile-sub">
-          ${count} élément${count > 1 ? "s" : ""} <span class="badge">${currentPortal}</span>
+      <div class="tile-head">
+        <div>
+          <h3 class="tile-title">${highlight(rub.title, q)}</h3>
+          <div class="tile-meta">
+            ${count} élément${count > 1 ? "s" : ""} <span class="pill">${currentPortal}</span>
+          </div>
         </div>
+        <button class="tile-toggle" type="button" aria-expanded="false">Ouvrir</button>
       </div>
-      <div class="tile-body">
-        ${(rub.items || []).map(it => {
-          const links = (it.links || []).filter(Boolean);
-          const linksHtml = links.length ? `
-            <ul class="links">
-              ${links.map(l => {
-                const label = escapeHtml(l);
-                return isUrl(l)
-                  ? `<li><a href="${escapeHtml(l)}" target="_blank" rel="noopener noreferrer">${label}</a></li>`
-                  : `<li>${label}</li>`;
-              }).join("")}
-            </ul>
-          ` : `<ul class="links"><li><i>(aucun lien)</i></li></ul>`;
 
-          return `
-            <div class="item">
-              <div class="item-head">${highlight(it.label || "", q)}</div>
-              ${it.text ? `<p class="item-text">${highlight(it.text, q)}</p>` : `<p class="item-text"><i>(pas de texte)</i></p>`}
-              ${linksHtml}
-            </div>
-          `;
-        }).join("")}
-      </div>
+      <div class="tile-body"></div>
     `;
+
+    const toggleBtn = tile.querySelector(".tile-toggle");
+    const body = tile.querySelector(".tile-body");
+
+    // Contenu accordéons (items)
+    const itemsHtml = (rub.items || []).map(it => {
+      const links = (it.links || []).filter(Boolean);
+
+      const linksHtml = links.length
+        ? `<div class="links">
+            ${links.map(l => {
+              if(isUrl(l)){
+                return `
+                  <div class="link-row">
+                    <div class="link-label">${highlight(l, q)}</div>
+                    <a class="link-btn" href="${escapeHtml(l)}" target="_blank" rel="noopener noreferrer">Ouvrir le lien</a>
+                  </div>
+                `;
+              }
+              // lien "non URL" : on le montre clairement, sans bouton
+              return `
+                <div class="link-row">
+                  <div class="link-label">${highlight(l, q)}</div>
+                  <div class="bad-link">Document / info (pas d’URL)</div>
+                </div>
+              `;
+            }).join("")}
+          </div>`
+        : `<div class="links"><div class="bad-link">(aucun lien)</div></div>`;
+
+      return `
+        <details class="accordion">
+          <summary>${highlight(it.label || "", q)}</summary>
+          ${it.text ? `<p class="item-text">${highlight(it.text, q)}</p>` : `<p class="item-text"><i>(pas de texte)</i></p>`}
+          ${linksHtml}
+        </details>
+      `;
+    }).join("");
+
+    body.innerHTML = itemsHtml;
+
+    // Ouverture/fermeture tuile
+    toggleBtn.addEventListener("click", () => {
+      const willOpen = !tile.classList.contains("open");
+      if(willOpen) closeAllTilesExcept(tile);
+
+      tile.classList.toggle("open", willOpen);
+      toggleBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      toggleBtn.textContent = willOpen ? "Fermer" : "Ouvrir";
+
+      // si on ouvre via recherche, on peut auto-ouvrir les accordéons qui matchent
+      // (option légère : on ouvre tous si recherche non vide)
+      if(willOpen && q){
+        body.querySelectorAll("details.accordion").forEach(d => d.open = true);
+      }
+    });
 
     tilesEl.appendChild(tile);
   });
@@ -110,7 +155,7 @@ portalBtns.forEach(btn => {
       b.classList.toggle("active", active);
       b.setAttribute("aria-selected", active ? "true" : "false");
     });
-    hintEl.textContent = `Portail actif : ${currentPortal}.`;
+    hintEl.textContent = `Portail actif : ${currentPortal}. Clique sur une tuile pour dérouler les textes.`;
     render();
   });
 });
