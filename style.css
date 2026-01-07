@@ -1,103 +1,180 @@
-body {
-  margin: 0;
+:root{
+  --bg:#111827;
+  --page:#f3f4f6;
+  --card:#ffffff;
+  --text:#111827;
+  --muted:#6b7280;
+  --primary:#2563eb;
+  --shadow: 0 10px 24px rgba(0,0,0,.10);
+  --radius: 16px;
+}
+
+*{ box-sizing: border-box; }
+body{
+  margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: #f3f4f6;
-  color: #111827;
+  background: var(--page);
+  color: var(--text);
 }
 
-header {
-  background: #111827;
-  color: white;
-  padding: 1.5rem;
+.wrap{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-h1 { margin: 0; }
-h2 {
-  margin: .3rem 0 1rem;
-  font-weight: normal;
-  opacity: .8;
+.header{
+  background: var(--bg);
+  color:#fff;
+  padding: 20px 0 18px;
 }
 
-.controls {
-  display: flex;
+h1{ margin:0; font-size: 26px; line-height: 1.2; }
+h2{ margin:6px 0 0; font-size: 16px; opacity: .85; font-weight: 500; }
+
+.bar{
+  margin-top: 14px;
+  display:flex;
+  gap: 12px;
+  align-items:center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
-.portals button {
-  background: #2563eb;
-  border: none;
-  color: white;
-  padding: .6rem 1.2rem;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
+.portals{
+n{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.portals button.active {
-  outline: 2px solid white;
+.btn{
+  border: 0;
+  background: var(--primary);
+  color:#fff;
+  padding: 10px 14px;
+  border-radius: 12px;
+  cursor:pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+.btn.active{
+  outline: 2px solid rgba(255,255,255,.45);
+  outline-offset: 2px;
 }
 
-#search {
+.search{
   flex: 1;
   min-width: 240px;
-  padding: .6rem;
-  border-radius: 8px;
-  border: none;
+  max-width: 560px;
+}
+.search input{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.20);
+  background: rgba(255,255,255,.08);
+  color:#fff;
+  outline: none;
+}
+.search input::placeholder{ color: rgba(255,255,255,.70); }
+
+.hint{
+  margin: 10px 0 0;
+  font-size: 13px;
+  color: rgba(255,255,255,.78);
 }
 
-main {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem;
+main.wrap{ padding-top: 16px; padding-bottom: 28px; }
+
+.tiles{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
 }
 
-.tiles {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1rem;
+.tile{
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(17,24,39,.06);
+  overflow: hidden;
 }
 
-.tile {
-  background: white;
-  border-radius: 14px;
-  padding: 1rem;
-  box-shadow: 0 6px 14px rgba(0,0,0,.08);
-  border-top: 8px solid var(--color);
+.tile-top{
+  padding: 14px 14px 10px;
+  border-top: 10px solid var(--rubColor);
+}
+.tile-title{
+  margin:0;
+  font-size: 17px;
+  line-height: 1.2;
+}
+.tile-sub{
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--muted);
 }
 
-.tile h3 {
+.tile-body{
+  padding: 10px 14px 14px;
+}
+
+.item{
+  border-top: 1px solid #e5e7eb;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.item:first-child{
+  border-top: none;
+  padding-top: 0;
   margin-top: 0;
 }
 
-.item {
-  margin-bottom: .8rem;
+.item-head{
+  font-weight: 800;
+  margin: 0 0 6px;
 }
 
-.item-title {
-  font-weight: 700;
-}
-
-.item-text {
-  font-size: .9rem;
+.item-text{
+  margin: 0;
+  font-size: 14px;
   line-height: 1.35;
+  color: #111827;
 }
 
-.item a {
-  display: inline-block;
-  margin-top: .2rem;
-  font-size: .85rem;
-  color: #2563eb;
-  text-decoration: none;
+.links{
+  margin: 8px 0 0;
+  padding-left: 18px;
+}
+.links li{ margin: 6px 0; }
+a{ color: var(--primary); text-decoration: none; }
+a:hover{ text-decoration: underline; }
+
+.badge{
+  display:inline-block;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  margin-left: 8px;
+  vertical-align: middle;
 }
 
-.item a:hover {
-  text-decoration: underline;
+.empty{
+  background: #fff;
+  border: 1px dashed #d1d5db;
+  border-radius: var(--radius);
+  padding: 14px;
+  color: var(--muted);
 }
 
-.hint {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #6b7280;
+mark{
+  padding: 0 .12em;
+  border-radius: .2em;
+}
+
+@media (max-width: 520px){
+  h1{ font-size: 22px; }
 }
