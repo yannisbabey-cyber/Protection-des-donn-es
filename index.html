@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Protection des données dans l’enseignement – Canton du Jura</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="wrap">
+      <h1>Protection des données dans l’enseignement</h1>
+      <h2>Mesures prises par le Canton du Jura</h2>
 
-<header>
-  <h1>Protection des données dans l’enseignement</h1>
-  <h2>Mesures prises par le Canton du Jura</h2>
+      <div class="bar">
+        <div class="portals" role="tablist" aria-label="Choix du portail">
+          <button class="btn" data-portal="SEN" role="tab" aria-selected="false">SEN</button>
+          <button class="btn" data-portal="SFP" role="tab" aria-selected="false">SFP</button>
+        </div>
 
-  <div class="controls">
-    <div class="portals">
-      <button data-portal="SEN">SEN</button>
-      <button data-portal="SFP">SFP</button>
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Rechercher (rubrique, item, texte, lien)…" />
+        </div>
+      </div>
+
+      <p class="hint" id="hint">
+        Choisis un portail (SEN ou SFP), puis utilise la recherche ou parcours les rubriques.
+      </p>
     </div>
+  </header>
 
-    <input type="search" id="search" placeholder="Rechercher dans les rubriques…">
-  </div>
-</header>
+  <main class="wrap">
+    <section id="tiles" class="tiles" aria-live="polite"></section>
+  </main>
 
-<main>
-  <section id="tiles" class="tiles">
-    <p class="hint">Sélectionne SEN ou SFP pour afficher les rubriques.</p>
-  </section>
-</main>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
