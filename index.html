@@ -1,51 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Protection des données dans l'enseignement</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Protection des données dans l’enseignement – Canton du Jura</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header-inner">
-      <h1>Protection des données dans l'enseignement</h1>
-      <h2>Mesures prises par le Canton du Jura</h2>
 
-      <div class="topbar">
-        <div class="portals" id="portals">
-          <button class="btn" data-portal="SEN">SEN</button>
-          <button class="btn" data-portal="SFP">SFP</button>
-          <button class="btn ghost" id="resetBtn" title="Retour au choix SEN/SFP" style="display:none;">Changer de portail</button>
-        </div>
+<header>
+  <h1>Protection des données dans l’enseignement</h1>
+  <h2>Mesures prises par le Canton du Jura</h2>
 
-        <div class="search">
-          <input id="searchInput" type="search" placeholder="Rechercher (rubrique, item, texte)..." autocomplete="off" />
-        </div>
-      </div>
-
-      <p class="hint" id="hint">Choisis un portail (SEN ou SFP), puis clique une rubrique.</p>
+  <div class="controls">
+    <div class="portals">
+      <button data-portal="SEN">SEN</button>
+      <button data-portal="SFP">SFP</button>
     </div>
-  </header>
 
-  <main class="main">
-    <section id="tiles" class="tiles"></section>
-  </main>
+    <input type="search" id="search" placeholder="Rechercher dans les rubriques…">
+  </div>
+</header>
 
-  <!-- Volet latéral -->
-  <aside id="panel" class="panel" aria-hidden="true">
-    <div class="panel-header">
-      <div>
-        <div class="panel-kicker" id="panelKicker"></div>
-        <div class="panel-title" id="panelTitle"></div>
-      </div>
-      <button class="icon-btn" id="closePanelBtn" aria-label="Fermer">✕</button>
-    </div>
-    <div class="panel-body" id="panelBody"></div>
-  </aside>
+<main>
+  <section id="tiles" class="tiles">
+    <p class="hint">Sélectionne SEN ou SFP pour afficher les rubriques.</p>
+  </section>
+</main>
 
-  <div id="backdrop" class="backdrop" hidden></div>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
