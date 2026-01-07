@@ -1,298 +1,61 @@
 {
   "SEN": [
     {
-      "name": "ordonnance et recommandation",
+      "name": "Ordonnance et recommandations",
+      "color": "#fde68a",
       "items": [
         {
-          "label": "Nouvelle lois fédérale sur la protection des données",
-          "text": "La réécriture de la LEO vise à intégrer des bases légales sur le traitement des données personnelles et sensibles concernant les élèves jurassiens, ceci dans une volonté de mettre en conformité les données et le respect des normes de la nouvelle loi fédérale sur la protection des données.",
-          "links": [
-            "https://www.fedlex.admin.ch/eli/cc/2022/491/fr"
-          ]
+          "label": "Nouvelle loi fédérale sur la protection des données",
+          "text": "Mise en conformité des pratiques scolaires avec la nLPD.",
+          "links": ["https://www.fedlex.admin.ch/eli/cc/2022/491/fr"]
         },
         {
           "label": "Directives cantonales",
-          "text": "Plusieurs directives liées à la protection des donnée sont transmises au écoles et division du SEN. Elles ont pour but de cadrer l'utilisation des outils numériques à l'école tout en assurant le respect de la nLPD.",
+          "text": "Directives transmises aux écoles et divisions du SEN.",
           "links": []
-        },
-        {
-          "label": "téléphone portable",
-          "text": "Utilisation du téléphone portable dans les école obligatoires jurassiennes",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        },
-        {
-          "label": "Prises de vue et enregistrements sonores dans le cadre scolaire",
-          "text": "Directive concernant les prises de vue et enregistrements sonores dans le cadre scolaire.",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        },
-        {
-          "label": "Intelligence artificielle générative - Recommandations pour l'enseignement obligatoire",
-          "text": "Recommandations concernant l'utilisation de l'IA dans l'enseignement obligatoire.",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        },
-        {
-          "label": "Droit à l'image, à la voix et les productions des élèves",
-          "text": "Le droit à l'image et à la voix des élèves doit être respecté dans toutes les productions et enregistrements.",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
         }
       ]
     },
     {
-      "name": "environnement de travail",
+      "name": "Environnement de travail",
+      "color": "#bbf7d0",
       "items": [
         {
-          "label": "Stratégie de cybersécurité de la République et Canton du Jura",
-          "text": "Le SDI est responsable de la gestion des infrastructures TIC de l'administration cantonale et de la cybersécurité au sein de l'Etat.",
-          "links": [
-            "https://www.jura.ch/fr/Autorites/Administration/Centre-de-competences-SDI/DFNS/SDI/Cybersecurite/SCJU/Strategie-de-cybersecurite-SCJU.html"
-          ]
-        },
-        {
-          "label": "Charte d'utilisation des outils numériques",
-          "text": "Charte d'utilisation des outils numériques à destination des enseignants.",
-          "links": [
-            "lien charte d'utlisation pour les enseignants à venir"
-          ]
+          "label": "Stratégie de cybersécurité",
+          "text": "Cadre cantonal de cybersécurité.",
+          "links": ["https://www.jura.ch"]
         },
         {
           "label": "EduLog",
-          "text": "EduLog est le service d'identité numérique pour les élèves et les enseignants, permettant l'accès sécurisé aux outils numériques.",
-          "links": [
-            "https://www.edulog.ch/fr/quest-ce-quedulog"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Service associé",
-      "items": [
-        {
-          "label": "Règlement de fonctionnement du P@C",
-          "text": "Le P@C est une structure qui accompagne les écoles dans l'usage du numérique et garantit un cadre sécurisé.",
-          "links": []
-        },
-        {
-          "label": "Règlement de fonctionnement du Service des moyens d'enseignement",
-          "text": "Le Service des moyens d'enseignement (SME) fournit des ressources et encadre certains usages.",
-          "links": []
-        },
-        {
-          "label": "Règlement de fonctionnement du Service de la formation continue",
-          "text": "Le service de formation continue propose des formations et des recommandations liées aux usages numériques.",
-          "links": []
-        },
-        {
-          "label": "Règlement de fonctionnement du Service de l'enseignement",
-          "text": "Le Service de l'enseignement définit des cadres, directives et règles applicables.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "name": "enseignants",
-      "items": [
-        {
-          "label": "Règlement pédagogique",
-          "text": "Règlement pédagogique et directives encadrant l'activité enseignante et les usages numériques.",
-          "links": []
-        },
-        {
-          "label": "Fiches pratiques",
-          "text": "Fiches pratiques pour l'usage des outils numériques dans le respect de la protection des données.",
-          "links": []
-        },
-        {
-          "label": "Formation et accompagnement",
-          "text": "Formation des enseignants aux enjeux de protection des données et accompagnement dans les pratiques.",
-          "links": []
-        },
-        {
-          "label": "Bonnes pratiques / recommandations",
-          "text": "Recommandations opérationnelles pour sécuriser les données et respecter le cadre légal.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "name": "élèves",
-      "items": [
-        {
-          "label": "Charte d'utilisation (élèves)",
-          "text": "Charte d'utilisation des outils numériques à destination des élèves.",
-          "links": []
-        },
-        {
-          "label": "Sensibilisation / citoyenneté numérique",
-          "text": "Sensibilisation des élèves à la protection des données et aux comportements responsables.",
-          "links": []
-        },
-        {
-          "label": "Règlements d'établissement",
-          "text": "Règlements et directives propres aux établissements concernant l'usage des outils et données.",
-          "links": []
-        },
-        {
-          "label": "Droit à l'image / consentement",
-          "text": "Règles liées au droit à l'image, à la voix, et au consentement pour les productions.",
-          "links": []
+          "text": "Identité numérique des élèves et enseignants.",
+          "links": ["https://www.edulog.ch/fr/quest-ce-quedulog"]
         }
       ]
     }
   ],
   "SFP": [
     {
-      "name": "ordonnance et recommandation",
+      "name": "Ordonnance et recommandations",
+      "color": "#fde68a",
       "items": [
         {
-          "label": "Nouvelle lois fédérale sur la protection des données",
-          "text": "La réécriture de la LEO vise à intégrer des bases légales sur le traitement des données personnelles et sensibles concernant les élèves jurassiens, ceci dans une volonté de mettre en conformité les données et le respect des normes de la nouvelle loi fédérale sur la protection des données.",
-          "links": [
-            "https://www.fedlex.admin.ch/eli/cc/2022/491/fr"
-          ]
-        },
-        {
-          "label": "Directives cantonales",
-          "text": "Plusieurs directives liées à la protection des donnée sont transmises au écoles et division du SEN. Elles ont pour but de cadrer l'utilisation des outils numériques à l'école tout en assurant le respect de la nLPD.",
-          "links": []
-        },
-        {
-          "label": "téléphone portable",
-          "text": "Utilisation du téléphone portable dans les écoles du CEJEF",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        },
-        {
-          "label": "Prises de vue et enregistrements sonores dans le cadre scolaire",
-          "text": "Directive concernant les prises de vue et enregistrements sonores dans le cadre scolaire.",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        },
-        {
-          "label": "Intelligence artificielle générative - Recommandations pour l'enseignement obligatoire",
-          "text": "Recommandations concernant l'utilisation de l'IA dans l'enseignement obligatoire.",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        },
-        {
-          "label": "Droit à l'image, à la voix et les productions des élèves",
-          "text": "Le droit à l'image et à la voix des élèves doit être respecté dans toutes les productions et enregistrements.",
-          "links": [
-            "Règlement propre à chaque division"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "environnement de travail",
-      "items": [
-        {
-          "label": "Stratégie de cybersécurité de la République et Canton du Jura",
-          "text": "Le SDI est responsable de la gestion des infrastructures TIC de l'administration cantonale et de la cybersécurité au sein de l'Etat.",
-          "links": [
-            "https://www.jura.ch/fr/Autorites/Administration/Centre-de-competences-SDI/DFNS/SDI/Cybersecurite/SCJU/Strategie-de-cybersecurite-SCJU.html"
-          ]
-        },
-        {
-          "label": "Charte d'utilisation des outils numériques",
-          "text": "Charte d'utilisation des outils numériques à destination des enseignants.",
-          "links": [
-            "lien charte d'utlisation pour les enseignants à venir"
-          ]
-        },
-        {
-          "label": "EduLog",
-          "text": "EduLog est le service d'identité numérique pour les élèves et les enseignants, permettant l'accès sécurisé aux outils numériques.",
-          "links": [
-            "https://www.edulog.ch/fr/quest-ce-quedulog"
-          ]
+          "label": "Nouvelle loi fédérale sur la protection des données",
+          "text": "Application de la nLPD dans la formation postobligatoire.",
+          "links": ["https://www.fedlex.admin.ch/eli/cc/2022/491/fr"]
         }
       ]
     },
     {
       "name": "Service associé",
+      "color": "#bfdbfe",
       "items": [
         {
-          "label": "Règlement de fonctionnement du P@C",
-          "text": "Le P@C est une structure qui accompagne les écoles dans l'usage du numérique et garantit un cadre sécurisé.",
-          "links": []
-        },
-        {
-          "label": "Règlement de fonctionnement du Service des moyens d'enseignement",
-          "text": "Le Service des moyens d'enseignement (SME) fournit des ressources et encadre certains usages.",
-          "links": []
-        },
-        {
-          "label": "Règlement de fonctionnement du Service de la formation continue",
-          "text": "Le service de formation continue propose des formations et des recommandations liées aux usages numériques.",
-          "links": []
-        },
-        {
-          "label": "Règlement de fonctionnement du Service de l'enseignement",
-          "text": "Le Service de l'enseignement définit des cadres, directives et règles applicables.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "name": "enseignants",
-      "items": [
-        {
-          "label": "Règlement pédagogique",
-          "text": "Règlement pédagogique et directives encadrant l'activité enseignante et les usages numériques.",
-          "links": []
-        },
-        {
-          "label": "Fiches pratiques",
-          "text": "Fiches pratiques pour l'usage des outils numériques dans le respect de la protection des données.",
-          "links": []
-        },
-        {
-          "label": "Formation et accompagnement",
-          "text": "Formation des enseignants aux enjeux de protection des données et accompagnement dans les pratiques.",
-          "links": []
-        },
-        {
-          "label": "Bonnes pratiques / recommandations",
-          "text": "Recommandations opérationnelles pour sécuriser les données et respecter le cadre légal.",
-          "links": []
-        }
-      ]
-    },
-    {
-      "name": "élèves",
-      "items": [
-        {
-          "label": "Charte d'utilisation (élèves)",
-          "text": "Charte d'utilisation des outils numériques à destination des élèves.",
-          "links": []
-        },
-        {
-          "label": "Sensibilisation / citoyenneté numérique",
-          "text": "Sensibilisation des élèves à la protection des données et aux comportements responsables.",
-          "links": []
-        },
-        {
-          "label": "Règlements d'établissement",
-          "text": "Règlements et directives propres aux établissements concernant l'usage des outils et données.",
-          "links": []
-        },
-        {
-          "label": "Droit à l'image / consentement",
-          "text": "Règles liées au droit à l'image, à la voix, et au consentement pour les productions.",
+          "label": "Service de la formation continue",
+          "text": "Accompagnement et recommandations liées aux usages numériques.",
           "links": []
         }
       ]
     }
   ]
 }
+
