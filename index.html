@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Protection des données dans l'enseignement</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="header">
+    <div class="header-inner">
+      <h1>Protection des données dans l'enseignement</h1>
+      <h2>Mesures prises par le Canton du Jura</h2>
 
-<header>
-  <h1>Protection des données dans l'enseignement</h1>
-  <h2>Mesures prises par le Canton du Jura</h2>
-</header>
+      <div class="topbar">
+        <div class="portals" id="portals">
+          <button class="btn" data-portal="SEN">SEN</button>
+          <button class="btn" data-portal="SFP">SFP</button>
+          <button class="btn ghost" id="resetBtn" title="Retour au choix SEN/SFP" style="display:none;">Changer de portail</button>
+        </div>
 
-<main>
-  <section id="portails">
-    <button class="portal-btn" data-portal="SEN">SEN</button>
-    <button class="portal-btn" data-portal="SFP">SFP</button>
-  </section>
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Rechercher (rubrique, item, texte)..." autocomplete="off" />
+        </div>
+      </div>
 
-  <section id="search">
-    <input type="text" id="searchInput" placeholder="Rechercher une mesure, un mot-clé...">
-  </section>
+      <p class="hint" id="hint">Choisis un portail (SEN ou SFP), puis clique une rubrique.</p>
+    </div>
+  </header>
 
-  <section id="tiles" class="tiles"></section>
-</main>
+  <main class="main">
+    <section id="tiles" class="tiles"></section>
+  </main>
 
-<script src="script.js"></script>
+  <!-- Volet latéral -->
+  <aside id="panel" class="panel" aria-hidden="true">
+    <div class="panel-header">
+      <div>
+        <div class="panel-kicker" id="panelKicker"></div>
+        <div class="panel-title" id="panelTitle"></div>
+      </div>
+      <button class="icon-btn" id="closePanelBtn" aria-label="Fermer">✕</button>
+    </div>
+    <div class="panel-body" id="panelBody"></div>
+  </aside>
+
+  <div id="backdrop" class="backdrop" hidden></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
