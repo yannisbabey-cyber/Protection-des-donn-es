@@ -1,0 +1,87 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  background: #f3f4f6;
+  color: #111827;
+}
+
+header {
+  background: #111827;
+  color: white;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin: 0.3rem 0 0;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+#portails {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.portal-btn {
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.portal-btn:hover {
+  background: #1d4ed8;
+}
+
+#search input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.tile h3 {
+  margin-top: 0;
+}
+
+.tile ul {
+  padding-left: 1.2rem;
+}
+
+.tile a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.tile a:hover {
+  text-decoration: underline;
+}
