@@ -100,16 +100,16 @@ function render(){
               if(isUrl(l)){
                 return `
                   <div class="link-row">
-                    <div class="link-label">${highlight(l, q)}</div>
-                    <a class="link-btn" href="${escapeHtml(l)}" target="_blank" rel="noopener noreferrer">Ouvrir le lien</a>
+                    <a class="link-btn" href="${escapeHtml(l)}" target="_blank" rel="noopener noreferrer">
+                      Ouvrir le lien
+                    </a>
                   </div>
                 `;
               }
-              // lien "non URL" : on le montre clairement, sans bouton
+              // lien non-URL : texte d’info, sans bouton
               return `
                 <div class="link-row">
-                  <div class="link-label">${highlight(l, q)}</div>
-                  <div class="bad-link">Document / info (pas d’URL)</div>
+                  <div class="bad-link">${highlight(l, q)}</div>
                 </div>
               `;
             }).join("")}
@@ -136,8 +136,6 @@ function render(){
       toggleBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
       toggleBtn.textContent = willOpen ? "Fermer" : "Ouvrir";
 
-      // si on ouvre via recherche, on peut auto-ouvrir les accordéons qui matchent
-      // (option légère : on ouvre tous si recherche non vide)
       if(willOpen && q){
         body.querySelectorAll("details.accordion").forEach(d => d.open = true);
       }
@@ -169,5 +167,5 @@ fetch("data.json")
     render();
   })
   .catch(() => {
-    tilesEl.innerHTML = `<div class="empty">Erreur : impossible de charger <b>data.json</b>. Vérifie que le fichier est à la racine du dépôt.</div>`;
+    tilesEl.innerHTML = `<div class="empty">Erreur : impossible de charger <b>data.json</b>. Vérifie que le fichier est à la racine du dépôt.`;
   });
