@@ -166,8 +166,12 @@ fetch("data.json")
     DB = json;
     // Sélectionner SFP par défaut
     const sfpBtn = portalBtns.find(btn => btn.dataset.portal === "SFP");
-    if(sfpBtn) sfpBtn.click();
-    else render();
+    if(sfpBtn) {
+      sfpBtn.click();
+    } else {
+      hintEl.textContent = "Choisis un portail (SEN ou SFP), puis ouvre une tuile (rubrique).";
+      render();
+    }
   })
   .catch(() => {
     tilesEl.innerHTML = `<div class="empty">Erreur : impossible de charger <b>data.json</b>. Vérifie que le fichier est à la racine du dépôt.`;
